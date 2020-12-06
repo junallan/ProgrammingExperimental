@@ -30,7 +30,7 @@
 
     <script>
         $(document).ready(function () {
-            var oldValue = '';
+            let oldValue = '';
             $('.edit').editable('/Home/SaveUser', {
                 cssclass: 'jeditForm',
                 tooltip: 'click to edit me...',
@@ -46,7 +46,7 @@
                     }
                 },
                 callback: function (value, settings) {
-                    var jsonData = $.parseJSON(value);
+                    let jsonData = $.parseJSON(value);
 
                     if (jsonData.status) {
                         $(this).text(jsonData.value);
