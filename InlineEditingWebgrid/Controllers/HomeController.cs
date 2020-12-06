@@ -37,7 +37,7 @@ namespace InlineEditingWebgrid.Controllers
         }
 
         [HttpPost]
-        public ActionResult saveuser(int id, string propertyName, string value)
+        public ActionResult SaveUser(int id, string propertyName, string value)
         {
             var status = false;
             var message = string.Empty;

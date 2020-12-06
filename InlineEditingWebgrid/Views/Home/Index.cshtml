@@ -31,18 +31,16 @@
     <script>
         $(document).ready(function () {
             var oldValue = '';
-            $('.edit').editable('/home/saveuser', {
+            $('.edit').editable('/Home/SaveUser', {
                 cssclass: 'jeditForm',
                 tooltip: 'click to edit me...',
                 width: 'none',
                 height: 'none',
                 onsubmit: function (settings, original) {
-                    alert('on submit');
                     oldValue = original.revert;
                 },
                 submitdata: function () {
-                    console.log($(this).data('propertyname'));
-                    return {
+                     return {
                         id: $(this).data('id'),
                         PropertyName: $(this).data('propertyname')
                     }
@@ -50,7 +48,6 @@
                 callback: function (value, settings) {
                     var jsonData = $.parseJSON(value);
 
-                    alert(jsonData.status);
                     if (jsonData.status) {
                         $(this).text(jsonData.value);
                     }
