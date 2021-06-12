@@ -1,0 +1,16 @@
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.exe
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.deps.json
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.runtimeconfig.json
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.runtimeconfig.dev.json
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.dll
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ref\ReflectionSample.dll
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\bin\Debug\net5.0\ReflectionSample.pdb
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.csprojAssemblyReference.cache
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.AssemblyInfoInputs.cache
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.AssemblyInfo.cs
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.csproj.CoreCompileInputs.cache
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.dll
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ref\ReflectionSample.dll
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.pdb
+C:\courses\Pluralsight\using-reflection-c-sharp-application-best-practices\02\demos\start\ReflectionSample\obj\Debug\net5.0\ReflectionSample.genruntimeconfig.cache
