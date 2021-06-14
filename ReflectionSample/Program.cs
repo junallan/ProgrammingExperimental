@@ -21,13 +21,44 @@ namespace ReflectionSample
 
             //InstantiatingAndManipulatingObjects();
 
+            //NetworkMonitorExample();
+
+            var myList = new List<Person>();
+            Console.WriteLine(myList.GetType().Name);
+            Console.WriteLine(myList.GetType());
+
+            var myDictionary = new Dictionary<string, int>();
+            Console.WriteLine(myDictionary.GetType());
+
+            var dictionaryType = myDictionary.GetType();
+
+            foreach(var genericTypeArgument in dictionaryType.GenericTypeArguments)
+            {
+                Console.WriteLine(genericTypeArgument);
+            }
+
+            foreach(var genericTypeArgument in dictionaryType.GetGenericArguments())
+            {
+                Console.WriteLine(genericTypeArgument);
+            }
+
+            var openDictionaryType = typeof(Dictionary<,>);
+
+            foreach(var genericArgument in openDictionaryType.GetGenericArguments())
+            {
+                Console.WriteLine(genericArgument);
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void NetworkMonitorExample()
+        {
             BootStrapFromConfiguration();
 
             Console.WriteLine("Monitoring network... something went wrong.");
 
             Warn();
-
-            Console.ReadLine();
         }
 
         private static void Warn()
