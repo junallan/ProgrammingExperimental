@@ -49,6 +49,21 @@ namespace ReflectionSample
                 Console.WriteLine(genericArgument);
             }
 
+            var createdInstance = Activator.CreateInstance(typeof(List<Person>));
+            Console.WriteLine(createdInstance.GetType());
+
+            //var createdResult = Activator.CreateInstance(typeof(Result<>));
+
+            //var openResultType = typeof(Result<>);
+            //var closedResultType = openResultType.MakeGenericType(typeof(Person));
+            //var createdResult = Activator.CreateInstance(closedResultType);
+
+            var openResultType = Type.GetType("ReflectionSample.Result`1");
+            var closedResultType = openResultType.MakeGenericType(Type.GetType("ReflectionSample.Person"));
+            var createdResult = Activator.CreateInstance(closedResultType);
+
+            Console.WriteLine(createdResult.GetType());
+
             Console.ReadLine();
         }
 
