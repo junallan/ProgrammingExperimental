@@ -64,6 +64,13 @@ namespace ReflectionSample
 
             Console.WriteLine(createdResult.GetType());
 
+            var methodInfo = closedResultType.GetMethod("AlterAndReturnValue");
+            Console.WriteLine(methodInfo);
+
+            var genericMethodInfo = methodInfo.MakeGenericMethod(typeof(Employee));
+
+            genericMethodInfo.Invoke(createdResult, new object[] { new Employee() });
+
             Console.ReadLine();
         }
 
