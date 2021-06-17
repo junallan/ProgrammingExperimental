@@ -21,8 +21,23 @@ namespace ReflectionSample
             }
         }
 
+        public void Register(Type contract, Type implementation)
+        {
+            if(!_map.ContainsKey(contract))
+            {
+                _map.Add(contract, implementation);
+            }
+        }
+
         public TContract Resolve<TContract>()
         {
+            if(typeof(TContract).IsGenericType && _map.ContainsKey(typeof(TContract).GetGenericTypeDefinition()))
+            {
+                var openImplementation = _map[typeof(TContract).GetGenericTypeDefinition()];
+                var closedImplementation = openImplementation.MakeGenericType(typeof(TContract).GenericTypeArguments);
+                return Create<TContract>(closedImplementation);
+            }
+
             if(!_map.ContainsKey(typeof(TContract)))
             {
                 throw new ArgumentException($"No registration found for {typeof(TContract)}");

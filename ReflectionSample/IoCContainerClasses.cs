@@ -13,10 +13,10 @@ namespace ReflectionSample
 
         }
 
-        //public CoffeeService(IWaterService waterService, IBeanService<Catimor> beanService)
-        //{
+        public CoffeeService(IWaterService waterService, IBeanService<Catimor> beanService)
+        {
 
-        //}
+        }
     }
 
     public interface ICoffeeService
@@ -31,17 +31,17 @@ namespace ReflectionSample
     {
     }
 
-    //public class ArabicaBeanService<T> : IBeanService<T>
-    //{
+    public class ArabicaBeanService<T> : IBeanService<T>
+    {
 
-    //}
+    }
 
-    //public interface IBeanService<T>
-    //{
-    //}
+    public interface IBeanService<T>
+    {
+    }
 
-    //public class Catimor
-    //{
+    public class Catimor
+    {
 
-    //}
+    }
 }

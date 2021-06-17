@@ -74,6 +74,8 @@ namespace ReflectionSample
             ioCContainer.Register<IWaterService, TapWaterService>();
             var waterService = ioCContainer.Resolve<IWaterService>();
 
+            ioCContainer.Register(typeof(IBeanService<>), typeof(ArabicaBeanService<>));
+
             ioCContainer.Register<ICoffeeService, CoffeeService>();
             var coffeeService = ioCContainer.Resolve<ICoffeeService>();
 
