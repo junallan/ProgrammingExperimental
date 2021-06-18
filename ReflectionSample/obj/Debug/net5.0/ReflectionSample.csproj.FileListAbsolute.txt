@@ -41,3 +41,4 @@ C:\ProgrammingExperimental\ReflectionSample\bin\Debug\net5.0\Microsoft.Extension
 C:\ProgrammingExperimental\ReflectionSample\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\ProgrammingExperimental\ReflectionSample\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\ProgrammingExperimental\ReflectionSample\obj\Debug\net5.0\ReflectionSample.csproj.CopyComplete
+C:\ProgrammingExperimental\ReflectionSample\bin\Debug\net5.0\ReflectionMagic.dll

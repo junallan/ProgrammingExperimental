@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using ReflectionMagic;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -23,6 +24,22 @@ namespace ReflectionSample
 
             //NetworkMonitorExample();
 
+            //Generics();
+
+            var person = new Person("Kevin");
+
+            var privateField = person.GetType().GetField("_aPrivateField", BindingFlags.Instance | BindingFlags.NonPublic);
+            privateField.SetValue(person, "New private field value");
+
+            person.AsDynamic()._aPrivateField = "Updated value via ReflectionMagic";
+
+
+
+            Console.ReadLine();
+        }
+
+        private static void Generics()
+        {
             var myList = new List<Person>();
             Console.WriteLine(myList.GetType().Name);
             Console.WriteLine(myList.GetType());
@@ -32,19 +49,19 @@ namespace ReflectionSample
 
             var dictionaryType = myDictionary.GetType();
 
-            foreach(var genericTypeArgument in dictionaryType.GenericTypeArguments)
+            foreach (var genericTypeArgument in dictionaryType.GenericTypeArguments)
             {
                 Console.WriteLine(genericTypeArgument);
             }
 
-            foreach(var genericTypeArgument in dictionaryType.GetGenericArguments())
+            foreach (var genericTypeArgument in dictionaryType.GetGenericArguments())
             {
                 Console.WriteLine(genericTypeArgument);
             }
 
             var openDictionaryType = typeof(Dictionary<,>);
 
-            foreach(var genericArgument in openDictionaryType.GetGenericArguments())
+            foreach (var genericArgument in openDictionaryType.GetGenericArguments())
             {
                 Console.WriteLine(genericArgument);
             }
@@ -78,8 +95,6 @@ namespace ReflectionSample
 
             ioCContainer.Register<ICoffeeService, CoffeeService>();
             var coffeeService = ioCContainer.Resolve<ICoffeeService>();
-
-            Console.ReadLine();
         }
 
         private static void NetworkMonitorExample()
