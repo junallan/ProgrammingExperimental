@@ -1,0 +1,13 @@
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.exe
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.deps.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.runtimeconfig.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.runtimeconfig.dev.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfo.cs
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.genruntimeconfig.cache
