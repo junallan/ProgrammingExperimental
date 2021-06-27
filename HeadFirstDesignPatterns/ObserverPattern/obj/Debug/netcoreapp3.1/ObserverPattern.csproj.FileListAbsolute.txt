@@ -1,0 +1,13 @@
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.exe
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.deps.json
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.runtimeconfig.json
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.runtimeconfig.dev.json
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.dll
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\bin\Debug\netcoreapp3.1\ObserverPattern.pdb
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.AssemblyInfo.cs
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.dll
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.pdb
+C:\ProgrammingExperimental\HeadFirstDesignPatterns\ObserverPattern\obj\Debug\netcoreapp3.1\ObserverPattern.genruntimeconfig.cache
