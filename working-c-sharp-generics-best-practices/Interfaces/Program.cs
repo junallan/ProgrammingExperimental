@@ -16,7 +16,7 @@ namespace Interfaces
 
             Console.WriteLine();
 
-            Console.WriteLine($"Total Students Created: {Student.StudentCount}");
+            //Console.WriteLine($"Total Students Created: {Student.StudentCount}");
 
             //var authorService = new AuthorPrinterService(new AuthorRepository());
             //authorService.PrintAuthors();
@@ -27,7 +27,7 @@ namespace Interfaces
 
    // public record Name(string First, string Last);
 
-    public class StudentRepository : IRepository<Student>
+    public class StudentRepository : IPersonRepository<Student>
     {
         private Student[] _names = new Student[10];
 
@@ -45,6 +45,15 @@ namespace Interfaces
             _names[9] = new Student("Aaron", "Frost");
         }
 
+        public Student Create(Student student)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Student CreateDefault()
+        {
+            throw new NotImplementedException();
+        }
 
         public IEnumerable<Student> List()
         {
@@ -55,17 +64,41 @@ namespace Interfaces
                 index++;
             }
         }
+
+        public IEnumerable<Student> Search(string name)
+        {
+            return List().Where(student => student.LastName.Contains(name)); //
+                //student.LastName.Contains(name));
+        }
+
+        public IEnumerable<Student> SortedList()
+        {
+            var students = List().ToList();
+            students.Sort();
+            return students;
+        }
     }
 
-    //public interface IAuthorRepository
-    //{
-    //    Author[] List();
-    //}
-
-    public interface IRepository<T>
+    public interface IRepository<T> where T : IComparable<T>
     {
         IEnumerable<T> List();
+        IEnumerable<T> SortedList();
     }
+
+    public interface IPersonRepository<T> : IRepository<T> where T : Person, IComparable<T>
+    {
+        IEnumerable<T> Search(string name);
+        T Create(Student student);
+        T CreateDefault();
+    }
+
+    public interface IPersonRepository
+    {
+        IEnumerable<T> Search<T>(string name) where T : Person;
+        T Create<T>(Student name) where T : Person;
+        T CreateDefault<T>() where T : Person, new();
+    }
+
 
     public class AuthorRepository : IRepository<Author>
     { 
@@ -78,32 +111,49 @@ namespace Interfaces
                 yield return new Author(student.FirstName, student.LastName);
             }
         }
+
+        public IEnumerable<Author> SortedList()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 
     public class StudentPrinterService
     {
-        private readonly IRepository<Student> _studentRepository;
-        public StudentPrinterService(IRepository<Student> studentRepository)
+        private readonly IPersonRepository<Student> _studentRepository;
+        public StudentPrinterService(IPersonRepository<Student> studentRepository)
         {
             _studentRepository = studentRepository;
         }
 
         public void PrintStudents(int max = 100)
         {
-            var students = _studentRepository.List().Take(max);
+            var students = _studentRepository.SortedList().Take(max).ToArray();
 
             //Array.Sort(students);
 
-            Console.WriteLine("Students:");
+            //Console.WriteLine("Students:");
 
             PrintStudentsToConsole(students);
+
+            var smiths = _studentRepository.Search("Smith");
+            PrintSmithsToConsole(smiths);
         }
 
         private void PrintStudentsToConsole(IEnumerable<Student> students)
         {
             Console.WriteLine("Students:");
             foreach(var student in students)
+            {
+                Console.WriteLine(student);
+            }
+        }
+
+        private void PrintSmithsToConsole(IEnumerable<Student> students)
+        {
+            Console.WriteLine("Smiths:");
+            foreach (var student in students)
             {
                 Console.WriteLine(student);
             }
@@ -134,18 +184,19 @@ namespace Interfaces
         }
     }
 
-
-    public class Student : IComparable<Student>  
+    public abstract class Person
     {
-        public static int StudentCount = 0;
         public string FirstName { get; set; }
         public string LastName { get; set; }
+    }
 
+
+    public class Student : Person, IComparable<Student>  
+    {
         public Student(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
-            StudentCount++;
         }
 
         public override string ToString()
@@ -183,11 +234,8 @@ namespace Interfaces
         }
     }
 
-    public class Author : IComparable<Author>
+    public class Author : Person, IComparable<Author>
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
         public Author(string firstName, string lastName)
         {
             FirstName = firstName;
