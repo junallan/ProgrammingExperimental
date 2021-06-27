@@ -9,6 +9,7 @@ namespace ObserverPattern
             WeatherData weatherData = new WeatherData();
 
             CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
+            ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
 
             weatherData.SetMeasurements(80, 65, 30.4f);
             weatherData.SetMeasurements(82, 70, 29.2f);

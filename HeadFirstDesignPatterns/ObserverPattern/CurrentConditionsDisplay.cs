@@ -16,11 +16,18 @@ namespace ObserverPattern
             weatherData.RegisterObserver(this);
         }
 
-        public void Update(float temp, float humidity, float pressure)
-        {
-            _temperature = temp;
-            _humidity = humidity;
+        //public void Update(float temp, float humidity, float pressure)
+        //{
+        //    _temperature = temp;
+        //    _humidity = humidity;
 
+        //    Display();
+        //}
+
+        public void Update()
+        {
+            _temperature = _weatherData.GetTemperature();
+            _humidity = _weatherData.GetHumidity();
             Display();
         }
 
@@ -28,5 +35,7 @@ namespace ObserverPattern
         {
             Console.WriteLine($"Current conditions: {_temperature} F degrees and {_humidity}% humidity");
         }
+
+       
     }
 }

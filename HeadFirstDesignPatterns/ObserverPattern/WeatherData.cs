@@ -20,13 +20,29 @@ namespace ObserverPattern
         {
             foreach(IObserver observer in _observers)
             {
-                observer.Update(_temperature, _humidity, _pressure);
+                observer.Update();
+                //observer.Update(_temperature, _humidity, _pressure);
             }
+        }
+
+        internal float GetPressure()
+        {
+            return _pressure;
         }
 
         public void RegisterObserver(IObserver o)
         {
             _observers.Add(o);
+        }
+
+        internal float GetTemperature()
+        {
+            return _temperature;
+        }
+
+        internal float GetHumidity()
+        {
+            return _humidity;
         }
 
         public void RemoveObserver(IObserver o)
