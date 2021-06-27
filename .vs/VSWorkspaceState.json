@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ReflectionSample",
-    "\\WebApplicationParallelProgramming\\App_Data",
-    "\\WebApplicationParallelProgramming\\Views"
+    "\\HeadFirstDesignPatterns",
+    "\\HeadFirstDesignPatterns\\StrategyPattern\\bin",
+    "\\HeadFirstDesignPatterns\\StrategyPattern\\bin\\Debug",
+    "\\HeadFirstDesignPatterns\\StrategyPattern\\bin\\Release",
+    "\\HeadFirstDesignPatterns\\StrategyPattern\\obj"
   ],
-  "SelectedNode": "\\ReflectionSample\\ReflectionSample.sln",
+  "SelectedNode": "\\HeadFirstDesignPatterns",
   "PreviewInSolutionExplorer": false
 }
