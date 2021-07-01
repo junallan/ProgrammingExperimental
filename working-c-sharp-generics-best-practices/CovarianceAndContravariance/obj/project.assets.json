@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\Interfaces\\Interfaces.csproj",
-      "projectName": "Interfaces",
-      "projectPath": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\Interfaces\\Interfaces.csproj",
+      "projectUniqueName": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\CovarianceAndContravariance\\CovarianceAndContravariance.csproj",
+      "projectName": "CovarianceAndContravariance",
+      "projectPath": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\CovarianceAndContravariance\\CovarianceAndContravariance.csproj",
       "packagesPath": "C:\\Users\\Jun\\.nuget\\packages\\",
-      "outputPath": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\Interfaces\\obj\\",
+      "outputPath": "C:\\ProgrammingExperimental\\working-c-sharp-generics-best-practices\\CovarianceAndContravariance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

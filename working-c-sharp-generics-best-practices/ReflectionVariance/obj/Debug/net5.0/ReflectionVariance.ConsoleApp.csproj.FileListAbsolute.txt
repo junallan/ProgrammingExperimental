@@ -1,0 +1,16 @@
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.exe
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.deps.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.runtimeconfig.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.runtimeconfig.dev.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ref\ReflectionVariance.ConsoleApp.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\bin\Debug\net5.0\ReflectionVariance.ConsoleApp.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.AssemblyInfo.cs
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ref\ReflectionVariance.ConsoleApp.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ReflectionVariance\obj\Debug\net5.0\ReflectionVariance.ConsoleApp.genruntimeconfig.cache
