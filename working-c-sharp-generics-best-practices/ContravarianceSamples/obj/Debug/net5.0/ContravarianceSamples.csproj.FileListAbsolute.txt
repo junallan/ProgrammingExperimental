@@ -1,0 +1,16 @@
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.exe
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.deps.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.runtimeconfig.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.runtimeconfig.dev.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ref\ContravarianceSamples.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\bin\Debug\net5.0\ContravarianceSamples.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.AssemblyInfo.cs
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ref\ContravarianceSamples.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\ContravarianceSamples\obj\Debug\net5.0\ContravarianceSamples.genruntimeconfig.cache
