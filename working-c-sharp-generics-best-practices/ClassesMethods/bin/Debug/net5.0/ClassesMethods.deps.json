@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ClassesMethods/1.0.0": {
+        "dependencies": {
+          "Ardalis.GuardClauses": "3.2.0"
+        },
+        "runtime": {
+          "ClassesMethods.dll": {}
+        }
+      },
+      "Ardalis.GuardClauses/3.2.0": {
+        "dependencies": {
+          "JetBrains.Annotations": "2021.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ardalis.GuardClauses.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "JetBrains.Annotations/2021.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "2021.1.0.0",
+            "fileVersion": "2021.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClassesMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ardalis.GuardClauses/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ec1w0oVASqfHa9tPMcp8ZPKNqz/QDW20o7bY+OaFGbmZJJE2PbpCNb+ZJRWNoiwSuKrjD6/IIwq9Y8LIAYKvSw==",
+      "path": "ardalis.guardclauses/3.2.0",
+      "hashPath": "ardalis.guardclauses.3.2.0.nupkg.sha512"
+    },
+    "JetBrains.Annotations/2021.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n9JSw5Z+F+6gp9vSv4aLH6p/bx3GAYA6FZVq1wJq/TJySv/kPgFKLGFeS7A8Xa5X4/GWorh5gd43yjamUgnBNA==",
+      "path": "jetbrains.annotations/2021.1.0",
+      "hashPath": "jetbrains.annotations.2021.1.0.nupkg.sha512"
+    }
+  }
+}
