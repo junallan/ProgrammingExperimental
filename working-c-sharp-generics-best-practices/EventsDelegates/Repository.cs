@@ -9,7 +9,17 @@ namespace EventsDelegates
     public interface IWriteRepository<T>
     {
         void Add(T entity);
-        event EventHandler<T> EntityAdded;
+        event EventHandler<EntityAddedEventArgs<T>> EntityAdded;
+    }
+
+    public class EntityAddedEventArgs<T> : EventArgs
+    {
+        public EntityAddedEventArgs(T entityAdded)
+        {
+            EntityAdded = entityAdded;
+        }
+
+        public T EntityAdded { get; }
     }
 
     public interface IReadRepository<T>
@@ -17,28 +27,28 @@ namespace EventsDelegates
         IEnumerable<T> List();
     }
 
-    public class Repository<T> : IWriteRepository<T>//, IReadRepository<T>
-    {
-        private static List<T> _data = new();
+    //public class Repository<T> : IWriteRepository<T>, IReadRepository<T>
+    //{
+    //    private static List<T> _data = new();
 
-        public IEnumerable<T> List()
-        {
-            return _data.AsEnumerable();
-        }
+    //    public IEnumerable<T> List()
+    //    {
+    //        return _data.AsEnumerable();
+    //    }
 
-        public void Add(T entity)
-        {
-            _data.Add(entity);
-            OnEntityAdded(entity);
-        }
+    //    public void Add(T entity)
+    //    {
+    //        _data.Add(entity);
+    //        OnEntityAdded(new EntityAddedEventArgs<T>(entity));
+    //    }
 
-        public event EventHandler<T> EntityAdded;
+    //    public event EventHandler<EntityAddedEventArgs<T>> EntityAdded;
 
-        protected virtual void OnEntityAdded(T entityAdded)
-        {
-            EntityAdded?.Invoke(this, entityAdded);
-        }
+    //    protected virtual void OnEntityAdded(EntityAddedEventArgs<T> entityAdded)
+    //    {
+    //        EntityAdded?.Invoke(this, entityAdded);
+    //    }
 
        
-    }
+    //}
 }

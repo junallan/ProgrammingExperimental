@@ -1,0 +1,16 @@
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.exe
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.deps.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.runtimeconfig.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.runtimeconfig.dev.json
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\ref\EventsDelegates.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\bin\Debug\net5.0\EventsDelegates.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.AssemblyInfo.cs
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\ref\EventsDelegates.dll
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.pdb
+C:\ProgrammingExperimental\working-c-sharp-generics-best-practices\EventsDelegates\obj\Debug\net5.0\EventsDelegates.genruntimeconfig.cache
