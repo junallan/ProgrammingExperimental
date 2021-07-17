@@ -9,16 +9,18 @@ namespace EventsDelegates
     public delegate T Operation<T>(T op1, T op2);
     public class NewMath<T> where T : struct
     {
-        public Operation<T> Add;
+        //public Operation<T> Add;
 
-        private readonly Predicate<T> _predicate;
+        public Func<T, T, T> Add;
+
+        private readonly Func<T,bool> _predicate;
         private readonly Action<T> _outputIgnoredItems;
 
         private List<T> _args = new();
 
-        public NewMath(IEnumerable<T> args, Operation<T> addFunction, Predicate<T> predicate, Action<T> outputIgnoredItems = null)
+        public NewMath(IEnumerable<T> args, Func<T,T,T> addFunction, Func<T,bool> predicate, Action<T> outputIgnoredItems = null)
         {
-            Add += addFunction;
+            Add = addFunction;
             _predicate = predicate;
             _outputIgnoredItems = outputIgnoredItems;
             _args.AddRange(args);
@@ -26,19 +28,37 @@ namespace EventsDelegates
 
         public T Sum()
         {
-            T total = default(T);
-            foreach(var arg in _args)
+            return _args.Aggregate(default(T), ProcessItem);
+            //var ignoreItems = _args.Where(i => !_predicate(i)).ToList();
+            //ignoreItems.ForEach(i => _outputIgnoredItems?.Invoke(i));
+
+            //return _args.Where(_predicate).Aggregate(Add);
+
+            //T total = default(T);
+            //foreach(var arg in _args)
+            //{
+            //    if(_predicate(arg))
+            //    {
+            //        total = Add(total, arg);
+            //    }   
+            //    else
+            //    {
+            //        _outputIgnoredItems?.Invoke(arg);
+            //    }
+            //}
+            //return total;
+        }
+
+        public T ProcessItem(T aggregation, T item)
+        {
+            if(_predicate(item))
             {
-                if(_predicate(arg))
-                {
-                    total = Add(total, arg);
-                }   
-                else
-                {
-                    _outputIgnoredItems?.Invoke(arg);
-                }
+                return Add(aggregation, item);
             }
-            return total;
+
+            _outputIgnoredItems?.Invoke(item);
+
+            return aggregation;
         }
     }
 
