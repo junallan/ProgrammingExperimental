@@ -12,13 +12,15 @@ namespace EventsDelegates
         public Operation<T> Add;
 
         private readonly Predicate<T> _predicate;
+        private readonly Action<T> _outputIgnoredItems;
 
         private List<T> _args = new();
 
-        public NewMath(IEnumerable<T> args, Operation<T> addFunction, Predicate<T> predicate)
+        public NewMath(IEnumerable<T> args, Operation<T> addFunction, Predicate<T> predicate, Action<T> outputIgnoredItems = null)
         {
             Add += addFunction;
             _predicate = predicate;
+            _outputIgnoredItems = outputIgnoredItems;
             _args.AddRange(args);
         }
 
@@ -30,7 +32,11 @@ namespace EventsDelegates
                 if(_predicate(arg))
                 {
                     total = Add(total, arg);
-                }       
+                }   
+                else
+                {
+                    _outputIgnoredItems?.Invoke(arg);
+                }
             }
             return total;
         }
@@ -46,7 +52,7 @@ namespace EventsDelegates
         public static void Execute()
         {
             var input = new[] { 10, 1200, 20, 2000};
-            var instance = new NewMath<int>(input, (a, b) => a + b, Big);
+            var instance = new NewMath<int>(input, (a, b) => a + b, Big, (i) => Console.WriteLine($"Ignoring {i}."));
 
             Console.WriteLine($"NewMath filtered sum is {instance.Sum()}");
         }
