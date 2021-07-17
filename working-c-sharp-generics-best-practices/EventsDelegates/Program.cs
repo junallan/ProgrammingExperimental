@@ -9,38 +9,40 @@ namespace EventsDelegates
         {
             Console.WriteLine("Generic Events and Delegates");
 
-            int count = 0;
+            EventsDelegates.DelegateRunner.Execute();
+
+            //int count = 0;
             
-            var authorRepo = new Repository<Author>();
-            var courseRepo = new Repository<Course>();
+            //var authorRepo = new Repository<Author>();
+            //var courseRepo = new Repository<Course>();
 
-            var authorLoader = new DataLoader<Author>(authorRepo);
-            var courseLoader = new DataLoader<Course>(courseRepo);
+            //var authorLoader = new DataLoader<Author>(authorRepo);
+            //var courseLoader = new DataLoader<Course>(courseRepo);
 
-            authorLoader.Load(Authors());
-            Console.WriteLine($"Loaded {authorLoader.Counter} authors.");
-            courseLoader.Load(Courses());
-            Console.WriteLine($"Loaded {courseLoader.Counter} courses.");
+            //authorLoader.Load(Authors());
+            //Console.WriteLine($"Loaded {authorLoader.Counter} authors.");
+            //courseLoader.Load(Courses());
+            //Console.WriteLine($"Loaded {courseLoader.Counter} courses.");
 
-            authorRepo.EntityAdded += Repo_EntityAdded;
-            authorRepo.EntityAdded += (o, e) => count++;
-            authorRepo.Add(new Author("Jun", "Parreno"));
-            Console.WriteLine($"{count} authors added.");
+            //authorRepo.EntityAdded += Repo_EntityAdded;
+            //authorRepo.EntityAdded += (o, e) => count++;
+            //authorRepo.Add(new Author("Jun", "Parreno"));
+            //Console.WriteLine($"{count} authors added.");
 
-            Console.WriteLine("Listing al authors:");
-            var authors = authorRepo.List();
+            //Console.WriteLine("Listing al authors:");
+            //var authors = authorRepo.List();
 
-            foreach(var author in authors)
-            {
-                Console.WriteLine(author);
-            }
+            //foreach(var author in authors)
+            //{
+            //    Console.WriteLine(author);
+            //}
 
-            Console.WriteLine("Listing all courses:");
-            var courses = courseRepo.List();
-            foreach(var course in courses)
-            {
-                Console.WriteLine(course);
-            }
+            //Console.WriteLine("Listing all courses:");
+            //var courses = courseRepo.List();
+            //foreach(var course in courses)
+            //{
+            //    Console.WriteLine(course);
+            //}
         }
 
         private static void Repo_EntityAdded(object sender, EntityAddedEventArgs<Author> args)
