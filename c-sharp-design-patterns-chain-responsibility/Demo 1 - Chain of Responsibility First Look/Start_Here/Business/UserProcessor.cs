@@ -12,6 +12,7 @@ namespace Chain_of_Responsibility_First_Look.Business
             try
             {
                 var handler = new SocialSecurityNumberValidatorHandler();
+
                 handler.SetNext(new AgeValidationHandler())
                        .SetNext(new NameValidationHandler())
                        .SetNext(new CitizenshipRegionValidationHandler());

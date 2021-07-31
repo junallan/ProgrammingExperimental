@@ -1,0 +1,12 @@
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\bin\Debug\netcoreapp2.0\Chain of Responsibility First Look.deps.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\bin\Debug\netcoreapp2.0\Chain of Responsibility First Look.runtimeconfig.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\bin\Debug\netcoreapp2.0\Chain of Responsibility First Look.runtimeconfig.dev.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\bin\Debug\netcoreapp2.0\Chain of Responsibility First Look.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\bin\Debug\netcoreapp2.0\Chain of Responsibility First Look.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.AssemblyInfo.cs
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 1 - Chain of Responsibility First Look\Start_Here\obj\Debug\netcoreapp2.0\Chain of Responsibility First Look.genruntimeconfig.cache
