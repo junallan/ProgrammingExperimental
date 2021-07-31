@@ -1,0 +1,12 @@
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\bin\Debug\netcoreapp2.0\Payment processing.deps.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\bin\Debug\netcoreapp2.0\Payment processing.runtimeconfig.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\bin\Debug\netcoreapp2.0\Payment processing.runtimeconfig.dev.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\bin\Debug\netcoreapp2.0\Payment processing.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\bin\Debug\netcoreapp2.0\Payment processing.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.csprojAssemblyReference.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.AssemblyInfo.cs
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-chain-responsibility\Demo 2 - Payment processing\Start_Here\obj\Debug\netcoreapp2.0\Payment processing.genruntimeconfig.cache

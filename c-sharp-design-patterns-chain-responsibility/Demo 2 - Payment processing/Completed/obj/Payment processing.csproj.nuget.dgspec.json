@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Start_Here\\Payment processing.csproj": {}
+    "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Completed\\Payment processing.csproj": {}
   },
   "projects": {
-    "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Start_Here\\Payment processing.csproj": {
+    "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Completed\\Payment processing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Start_Here\\Payment processing.csproj",
+        "projectUniqueName": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Completed\\Payment processing.csproj",
         "projectName": "Payment processing",
-        "projectPath": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Start_Here\\Payment processing.csproj",
+        "projectPath": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Completed\\Payment processing.csproj",
         "packagesPath": "C:\\Users\\Jun\\.nuget\\packages\\",
-        "outputPath": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Start_Here\\obj\\",
+        "outputPath": "C:\\ProgrammingExperimental\\c-sharp-design-patterns-chain-responsibility\\Demo 2 - Payment processing\\Completed\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

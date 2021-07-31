@@ -10,7 +10,19 @@ namespace Payment_processing.Business.Handlers.PaymentHandlers
 
         public virtual void Handle(Order order)
         {
-            throw new NotImplementedException();
+            if(Next == null && order.AmountDue > 0)
+            {
+                throw new InsufficientPaymentException();
+            }
+
+            if(order.AmountDue > 0)
+            {
+                Next.Handle(order);
+            }
+            else
+            {
+                order.ShippingStatus = ShippingStatus.ReadyForShippment;
+            }
         }
 
         public IHandler<Order> SetNext(IHandler<Order> next)

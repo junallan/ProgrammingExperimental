@@ -27,7 +27,10 @@ namespace Payment_processing
             Console.WriteLine(order.AmountDue);
             Console.WriteLine(order.ShippingStatus);
 
-            /// TODO: Handle payment...
+            var handler = new PaypalHandler();
+            handler.SetNext(new CreditCardHandler()).SetNext(new InvoiceHandler());
+
+            handler.Handle(order);
 
             Console.WriteLine(order.AmountDue);
             Console.WriteLine(order.ShippingStatus);
