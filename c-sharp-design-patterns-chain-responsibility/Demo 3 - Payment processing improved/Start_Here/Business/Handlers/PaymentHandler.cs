@@ -1,25 +1,38 @@
 ﻿using Payment_processing.Business.Exceptions;
 using Payment_processing.Business.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Payment_processing.Business.Handlers.PaymentHandlers
 {
-    public abstract class PaymentHandler : IHandler<Order>
+    public class PaymentHandler
     {
-        private IHandler<Order> Next { get; set; }
+        private readonly IList<IReceiver<Order>> receivers;
+
+        public PaymentHandler(params IReceiver<Order>[] receivers)
+        {
+            this.receivers = receivers;
+        }
 
         public virtual void Handle(Order order)
         {
-            Console.WriteLine($"Running: {GetType().Name}");
-
-            if (Next == null && order.AmountDue > 0)
+            foreach(var receiver in receivers)
             {
-                throw new InsufficientPaymentException();
+                Console.WriteLine($"Running: {receiver.GetType().Name}");
+
+                if (order.AmountDue > 0)
+                {
+                    receiver.Handle(order);
+                }
+                else
+                {
+                    break;
+                }
             }
 
-            if (order.AmountDue > 0)
+            if (order.AmountDue> 0)
             {
-                Next.Handle(order);
+                throw new InsufficientPaymentException();
             }
             else
             {
@@ -27,11 +40,9 @@ namespace Payment_processing.Business.Handlers.PaymentHandlers
             }
         }
 
-        public IHandler<Order> SetNext(IHandler<Order> next)
+        public void SetNext(IReceiver<Order> next)
         {
-            Next = next;
-
-            return Next;
+            receivers.Add(next);
         }
     }
 }

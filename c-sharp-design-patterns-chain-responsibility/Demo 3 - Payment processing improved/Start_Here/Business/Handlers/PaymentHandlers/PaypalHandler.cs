@@ -4,19 +4,17 @@ using System.Linq;
 
 namespace Payment_processing.Business.Handlers.PaymentHandlers
 {
-    public class PaypalHandler : PaymentHandler
+    public class PaypalHandler : IReceiver<Order>
     {
         private PaypalPaymentProcessor PaypalPaymentProcessor { get; }
             = new PaypalPaymentProcessor();
 
-        public override void Handle(Order order)
+        public void Handle(Order order)
         {
             if (order.SelectedPayments.Any(x => x.PaymentProvider == PaymentProvider.Paypal))
             {
                 PaypalPaymentProcessor.Finalize(order);
             }
-
-            base.Handle(order);
         }
     }
 }
