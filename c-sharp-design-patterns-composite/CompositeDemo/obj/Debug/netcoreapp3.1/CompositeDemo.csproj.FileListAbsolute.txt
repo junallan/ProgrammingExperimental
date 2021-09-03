@@ -1,0 +1,14 @@
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.exe
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.deps.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.runtimeconfig.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.runtimeconfig.dev.json
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\CompositeDemo.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.csproj.AssemblyReference.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.AssemblyInfoInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.AssemblyInfo.cs
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.csproj.CoreCompileInputs.cache
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.dll
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.pdb
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.genruntimeconfig.cache
