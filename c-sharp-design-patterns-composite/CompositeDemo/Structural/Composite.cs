@@ -13,7 +13,7 @@ namespace CompositeDemo.Structural
 
         }
 
-        public override void Add(Component c)
+        public void Add(Component c)
         {
             this.children.Add(c);
         }
@@ -28,7 +28,7 @@ namespace CompositeDemo.Structural
             }
         }
 
-        public override void Remove(Component c)
+        public void Remove(Component c)
         {
             this.children.Remove(c);
         }
