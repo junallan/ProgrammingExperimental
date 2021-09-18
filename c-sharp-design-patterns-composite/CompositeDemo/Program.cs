@@ -1,12 +1,23 @@
 ﻿using CompositeDemo.Structural;
 using Newtonsoft.Json;
 using System;
+using System.Xml.Linq;
 
 namespace CompositeDemo
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            var xml = XElement.Load("file-system.xml");
+
+            foreach(var leaf in xml.FindElements(x => !x.HasElements))
+            {
+                Console.WriteLine($"***** LEAF: {leaf.Attribute("name")}, {leaf.Attribute("fileBytes")}");
+            }
+        }
+
+        private static void BuilderExample()
         {
             var builder = new FileSystemBuilder("development");
             builder.AddDirectory("project1");

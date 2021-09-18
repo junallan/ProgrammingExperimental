@@ -14,3 +14,4 @@ C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\D
 C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.genruntimeconfig.cache
 C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\obj\Debug\netcoreapp3.1\CompositeDemo.csproj.CopyComplete
+C:\ProgrammingExperimental\c-sharp-design-patterns-composite\CompositeDemo\bin\Debug\netcoreapp3.1\file-system.xml
