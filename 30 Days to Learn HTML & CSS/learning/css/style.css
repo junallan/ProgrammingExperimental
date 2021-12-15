@@ -1,9 +1,16 @@
 a {
-    color: red; text-decoration: none;
+    color: red; 
+    text-decoration: none;
 }
 
 h1 {
     font-family: sans-serif;
 }
 
+div {
+    width: 500px;
+    background: red;
+    margin: auto;
+    text-align: center;
+}
 
