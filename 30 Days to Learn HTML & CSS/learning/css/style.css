@@ -1,18 +1,34 @@
-body {
-    background: #e3e3e3;
-    font-family: sans-serif;
-
- 
-}
-
 .wrap {
-    width: 600px;
+    background: green;
+    min-width: 600px;
+    width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
-blockquote {
-    border: 1px solid white;
-     text-align: center;
-     margin-left: 0;
+.content, aside {
+    height: 600px;
 }
+
+.content {
+    float: left;
+    background: red;
+    width: 80%;
+}
+
+aside {
+    background: brown;
+    float: left;
+    width: 20%;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+/* 
+footer {
+    clear: both;
+} */
+
 
