@@ -1,16 +1,15 @@
 html {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.5;
 }
 
 h1, h2, h3 {
     color: #AE053E;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    font-family: 'Oswald', sans-serif; 
 }
 
 h1 {
     font-size: 3.5rem;
-    font-weight: normal;
     letter-spacing: .1rem;
     text-transform: capitalize;
 }
@@ -47,6 +46,27 @@ ol {
     list-style-type: decimal-leading-zero; 
  }
  
+a {
+    color: #006EAC;
+}
+
+a:visited {
+    color: #2A4758;
+}
+
+a:hover {
+    background-color: #006EAC;
+    color:white;
+}
+
+a:focus {
+    color: #AE053E;
+}
+
+a:active {
+    background-color:black;
+    color:white;
+}
 
 .site-nav-list {
     padding-left: 0;;
@@ -54,4 +74,19 @@ ol {
 
 .site-nav-list li {
     display: inline;
+}
+
+figure {
+    margin-left: 0;
+}
+
+.design-example {
+    float: right;  
+    margin: 0 0 1rem 1rem;
+    max-width: 30%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
