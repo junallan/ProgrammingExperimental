@@ -1,4 +1,4 @@
-body {
+html {
     font-family: Georgia, Times, "Times New Roman", serif;
     line-height: 1.5;
 }
@@ -16,7 +16,10 @@ h1 {
 }
 
 h2 {
+    border-bottom: 5px solid;
     font-size: 2rem;
+    margin: 4rem 0 2rem;
+    padding-bottom: .5rem;
 }
 
 h3 {
@@ -25,4 +28,30 @@ h3 {
 
 .site-intro {
     font-size: 1.25rem;
+}
+
+main {
+    margin: auto;
+    max-width: 38rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ol {    
+    list-style-type: decimal-leading-zero; 
+ }
+ 
+
+.site-nav-list {
+    padding-left: 0;;
+}
+
+.site-nav-list li {
+    display: inline;
 }
