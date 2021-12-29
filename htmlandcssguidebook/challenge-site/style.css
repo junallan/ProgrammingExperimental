@@ -1,6 +1,10 @@
 html {
+    background-color: #FFFEF4;
+    background-image: url("images/dots.png");
+    background-repeat: repeat-y;
     font-family: 'Merriweather', serif;
     line-height: 1.5;
+    padding-left: 40px;
 }
 
 h1, h2, h3 {
@@ -11,12 +15,12 @@ h1, h2, h3 {
 h1 {
     font-size: 3.5rem;
     letter-spacing: .1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 h2 {
     border-bottom: 5px solid;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 4rem 0 2rem;
     padding-bottom: .5rem;
 }
@@ -60,7 +64,8 @@ a:hover {
 }
 
 a:focus {
-    color: #AE053E;
+    background-color: #AE053E;
+    color:white;
 }
 
 a:active {
@@ -80,13 +85,34 @@ figure {
     margin-left: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .design-example {
     float: right;  
     margin: 0 0 1rem 1rem;
     max-width: 30%;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.hero {
+    background-image: url("images/challenge-hero.jpg");
+    background-size: cover;
+    min-height: 30rem;
+    text-align: center;
+}
+
+.hero h1 {
+    text-shadow: 5px 5px white;
+}
+
+.call-to-action {
+    background-color: #0070B0;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 6px white;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
 }
