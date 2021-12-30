@@ -4,6 +4,12 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-h1{color: red;}
+body{background-color: orange;}
 
-p{color:aqua;}
+//Overall styling for the Navigation of the document.
+
+//Oveerall styling for the MAIN of the document.
+h1 {color: $primaryColor;}
+
+//Ovrall styling for the FOOTER of the document.
+footer{background-color: $primaryColor;}
