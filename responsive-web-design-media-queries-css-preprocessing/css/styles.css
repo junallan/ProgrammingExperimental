@@ -21,51 +21,121 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* ----------------------------------- BODY ------------------------------------- */
 body {
-  background-color: orange; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
 
-h1 {
-  color: #857493; }
+/* ----------------------------------- HEADER ----------------------------------- */
+header {
+  background-color: #424e64;
+  color: #bbc2ca;
+  padding: 1rem 2%;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 1.05rem;
+  font-weight: 300;
+}
 
+/* ----------------------------------- NAVIGATION ----------------------------------- */
+nav {
+  background-color: #bbc2ca;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  padding: .5rem 0;
+  color: #424e64;
+  text-decoration: none;
+  transition: background 0.75s ease, color 0.75s ease;
+}
+nav ul li.active a {
+  background-color: #9ea8b4;
+}
+nav ul li a:hover {
+  color: #bbc2ca;
+  background-color: #424e64;
+}
+
+/* ----------------------------------- FOOTER ----------------------------------- */
 footer {
-  background-color: #857493; }
+  width: 100%;
+  background-color: #424e64;
+}
+footer p {
+  text-align: center;
+  color: #bbc2ca;
+  padding: .75rem 0;
+  font-size: .9rem;
+}
+footer p a {
+  color: #bbc2ca;
+}
 
-@media only screen and (min-width: 560px) {
-  body {
-    background-color: green; } }
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
