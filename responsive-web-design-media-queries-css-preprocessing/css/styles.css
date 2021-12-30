@@ -118,6 +118,53 @@ nav ul li a:hover {
   background-color: #424e64;
 }
 
+/* ----------------------------------- MAIN ----------------------------------- */
+main figure.banner {
+  width: 100%;
+}
+main figure.banner img {
+  width: 100%;
+}
+main h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0 2%;
+  color: #424e64;
+}
+main h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0 0 2%;
+  color: #566683;
+}
+main h3 {
+  font-size: 1.2rem;
+  color: #6d7f9f;
+}
+main p {
+  line-height: 130%;
+  color: #35373a;
+}
+main hr.fadeAway {
+  background: linear-gradient(to right, #424e64 0%, rgba(66, 78, 100, 0.01) 100%);
+  height: 2px;
+  border: none;
+  margin: 0 2%;
+}
+main figure.photo {
+  width: 96%;
+  margin: 0.5rem 2%;
+}
+main figure.photo img {
+  width: 100%;
+}
+main figure.photo figcaption {
+  text-align: center;
+  color: #424e64;
+}
+main div.blog article {
+  margin: 0.5rem 2%;
+  width: 96%;
+}
+
 /* ----------------------------------- FOOTER ----------------------------------- */
 footer {
   width: 100%;
@@ -138,4 +185,63 @@ footer p a {
   content: "";
   display: table;
   clear: both;
+}
+
+@media only screen and (min-width: 560px) {
+  /* ----------------------------------- MAIN ----------------------------------- */
+  main figure.photo {
+    width: 46%;
+    float: left;
+  }
+  main div.blog article {
+    float: left;
+    width: 46%;
+  }
+  main div.blog article:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ----------------------------------- BODY ----------------------------------- */
+  body {
+    background-image: url(../images/polonez_car.png);
+  }
+
+  div#wrapper {
+    max-width: 80rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px #000000;
+    background-color: #fff;
+  }
+
+  /* ----------------------------------- NAVIGATION ----------------------------------- */
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul li a {
+    padding: .5rem 1rem;
+  }
+
+  /* ----------------------------------- MAIN ----------------------------------- */
+  main figure.photo {
+    width: 21%;
+    float: left;
+  }
+  main div.blog article {
+    float: left;
+    width: 29.33%;
+  }
+  main div.blog article:nth-child(2n+1) {
+    clear: none;
+  }
+  main div.blog article:nth-child(32n+1) {
+    clear: left;
+  }
 }
