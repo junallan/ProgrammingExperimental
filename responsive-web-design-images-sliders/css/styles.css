@@ -106,11 +106,16 @@ body {
 /* ------------- HEADER ------------- */
 header {
   height: 110px;
-  background-image: url(../images/header0560.jpg); }
+  background-image: url(../images/header0560.jpg);
+  position: relative; }
   header h1, header h2 {
     padding-left: 2%;
     font-weight: 300;
     margin-left: 150px; }
+  header figure.logo {
+    position: absolute;
+    bottom: 0;
+    left: 2%; }
   header h1 {
     font-size: 2rem;
     padding-top: 35px; }

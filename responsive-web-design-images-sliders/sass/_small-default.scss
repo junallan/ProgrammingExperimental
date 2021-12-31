@@ -16,12 +16,14 @@ body {
 header {
 	height: 110px;
 	background-image: url(../images/header0560.jpg);
+	position: relative;
 	h1, h2 {
         padding-left: $gutter; 
         font-weight: $normalWeight;
 		margin-left: 150px;
     } //end both
 
+	figure.logo {position:absolute; bottom: 0; left: 2%;}
     
 	h1{
         font-size: 2rem; 
