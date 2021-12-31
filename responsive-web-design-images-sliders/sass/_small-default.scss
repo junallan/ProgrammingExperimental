@@ -88,21 +88,21 @@ main {
 		margin: 0 $gutter;
 	} // end p
 
-	article {
-		margin: .5rem $gutter;
+	figure.photoA, figure.photoB img {width: 100%;}
+	figure.photoA {
+		width: 50%;
+		margin: 0 $gutter;
+		float: right;
 	}
-	
-	figure.photo-pd, figure.photo-pd img {
-		width: 100%;
+	figure.photoB {
+		width: 96%;
+		margin: 0 $gutter;
 	}
-
-    // figure {
-	// 	width:96%;
-	// 	margin-left:$gutter;
-	// }
-  
-    // figure img {width: 100%;}
-    
+    figure.photoA figcaption, figure.photoB figcaption {
+		text-align: center;
+		font-weight: $boldWeight;
+		color: $secondaryColor;
+	}
     
 } // end main
 

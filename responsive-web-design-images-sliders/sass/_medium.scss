@@ -16,14 +16,5 @@ main {
     max-width: 100em;
     margin: 0 auto;
     
-    article.multiCol {
-        column-count: 2;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-rule: 1px solid $secondaryColor; 
-        -webkit-column-rule: 1px solid $secondaryColor;
-        -moz-column-rule: 1px solid $secondaryColor;
-        column-gap: $gutter;
-        -webkit-column-gap: $gutter;
-    }
+    figure.photoB {width: 75%; float: right;}
 }

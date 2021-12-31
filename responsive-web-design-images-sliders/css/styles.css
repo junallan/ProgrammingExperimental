@@ -159,10 +159,19 @@ main {
   main p {
     line-height: 130%;
     margin: 0 2%; }
-  main article {
-    margin: 0.5rem 2%; }
-  main figure.photo-pd, main figure.photo-pd img {
+  main figure.photoA, main figure.photoB img {
     width: 100%; }
+  main figure.photoA {
+    width: 50%;
+    margin: 0 2%;
+    float: right; }
+  main figure.photoB {
+    width: 96%;
+    margin: 0 2%; }
+  main figure.photoA figcaption, main figure.photoB figcaption {
+    text-align: center;
+    font-weight: 500;
+    color: #d0aa94; }
 
 /*  ------------- FOOTER -------------  */
 footer {
@@ -195,15 +204,9 @@ footer {
   main {
     max-width: 100em;
     margin: 0 auto; }
-    main article.multiCol {
-      column-count: 2;
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-rule: 1px solid #d0aa94;
-      -webkit-column-rule: 1px solid #d0aa94;
-      -moz-column-rule: 1px solid #d0aa94;
-      column-gap: 2%;
-      -webkit-column-gap: 2%; } }
+    main figure.photoB {
+      width: 75%;
+      float: right; } }
 @media only screen and (min-width: 64em) {
   /* ------------- HEADER ------------- */
   header {
@@ -222,7 +225,5 @@ footer {
     padding: .5rem 1rem; }
 
   /* ------------- MAIN ------------- */
-  main article.multiCol {
-    column-count: 3;
-    -webkit-column-count: 3;
-    -moz-column-count: 3; } }
+  main figure.photoB {
+    width: 50%; } }
