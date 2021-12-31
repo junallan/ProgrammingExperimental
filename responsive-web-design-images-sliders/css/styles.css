@@ -159,10 +159,9 @@ main {
   main p {
     line-height: 130%;
     margin: 0 2%; }
-  main figure {
-    width: 96%;
-    margin-left: 2%; }
-  main figure img {
+  main article {
+    margin: 0.5rem 2%; }
+  main figure.photo-pd, main figure.photo-pd img {
     width: 100%; }
 
 /*  ------------- FOOTER -------------  */
@@ -196,10 +195,15 @@ footer {
   main {
     max-width: 100em;
     margin: 0 auto; }
-    main figure {
-      width: 50%;
-      margin-right: 2%;
-      float: right; } }
+    main article.multiCol {
+      column-count: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-rule: 1px solid #d0aa94;
+      -webkit-column-rule: 1px solid #d0aa94;
+      -moz-column-rule: 1px solid #d0aa94;
+      column-gap: 2%;
+      -webkit-column-gap: 2%; } }
 @media only screen and (min-width: 64em) {
   /* ------------- HEADER ------------- */
   header {
@@ -217,4 +221,8 @@ footer {
   nav ul li a {
     padding: .5rem 1rem; }
 
-  /* ------------- MAIN ------------- */ }
+  /* ------------- MAIN ------------- */
+  main article.multiCol {
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3; } }

@@ -15,10 +15,15 @@ header {
 main {
     max-width: 100em;
     margin: 0 auto;
-    // border: 1px solid orange;
-    figure {
-        width: 50%;
-        margin-right: $gutter;
-        float: right;
+    
+    article.multiCol {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-rule: 1px solid $secondaryColor; 
+        -webkit-column-rule: 1px solid $secondaryColor;
+        -moz-column-rule: 1px solid $secondaryColor;
+        column-gap: $gutter;
+        -webkit-column-gap: $gutter;
     }
 }

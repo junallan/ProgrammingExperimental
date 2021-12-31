@@ -87,13 +87,21 @@ main {
 		line-height: 130%;
 		margin: 0 $gutter;
 	} // end p
-	
-    figure {
-		width:96%;
-		margin-left:$gutter;
+
+	article {
+		margin: .5rem $gutter;
 	}
+	
+	figure.photo-pd, figure.photo-pd img {
+		width: 100%;
+	}
+
+    // figure {
+	// 	width:96%;
+	// 	margin-left:$gutter;
+	// }
   
-    figure img {width: 100%;}
+    // figure img {width: 100%;}
     
     
 } // end main
