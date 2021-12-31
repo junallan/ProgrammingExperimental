@@ -159,19 +159,15 @@ main {
   main p {
     line-height: 130%;
     margin: 0 2%; }
-  main figure.photoA, main figure.photoB img {
-    width: 100%; }
-  main figure.photoA {
-    width: 50%;
-    margin: 0 2%;
-    float: right; }
-  main figure.photoB {
+  main figure.hero {
     width: 96%;
-    margin: 0 2%; }
-  main figure.photoA figcaption, main figure.photoB figcaption {
-    text-align: center;
-    font-weight: 500;
-    color: #d0aa94; }
+    margin-left: 2%; }
+  main figure.hero img {
+    width: 100%; }
+  main picture.hero {
+    margin-left: 2%; }
+  main picture.hero img {
+    width: 96%; }
 
 /*  ------------- FOOTER -------------  */
 footer {
@@ -225,5 +221,6 @@ footer {
     padding: .5rem 1rem; }
 
   /* ------------- MAIN ------------- */
-  main figure.photoB {
-    width: 50%; } }
+  main {
+    max-width: 100em;
+    margin: 0 auto; } }

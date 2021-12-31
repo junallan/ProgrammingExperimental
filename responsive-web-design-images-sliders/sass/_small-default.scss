@@ -88,22 +88,11 @@ main {
 		margin: 0 $gutter;
 	} // end p
 
-	figure.photoA, figure.photoB img {width: 100%;}
-	figure.photoA {
-		width: 50%;
-		margin: 0 $gutter;
-		float: right;
-	}
-	figure.photoB {
-		width: 96%;
-		margin: 0 $gutter;
-	}
-    figure.photoA figcaption, figure.photoB figcaption {
-		text-align: center;
-		font-weight: $boldWeight;
-		color: $secondaryColor;
-	}
-    
+	figure.hero {width: 96%; margin-left: $gutter;}
+    figure.hero img {width: 100%}
+
+	picture.hero {margin-left: $gutter;}
+    picture.hero img {width: 96%}
 } // end main
 
 
