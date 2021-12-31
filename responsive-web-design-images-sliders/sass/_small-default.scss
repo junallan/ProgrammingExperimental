@@ -1,0 +1,122 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ------------- BODY ------------- */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $normalWeight;
+}
+
+
+/* ------------- HEADER ------------- */
+header {
+	height: 110px;
+	background-image: url(../images/header0560.jpg);
+	h1, h2 {
+        padding-left: $gutter; 
+        font-weight: $normalWeight;
+		margin-left: 150px;
+    } //end both
+
+    
+	h1{
+        font-size: 2rem; 
+		padding-top:35px;
+    } //end h1
+    
+	h2{
+        font-size: 1rem;
+    } //end h2
+}
+
+
+
+/*  ------------- NAV -------------  */
+nav {
+	background-color: $secondaryColor;
+	border-bottom:1px solid rgba(0,0,0,0.3);
+	ul li {
+		float: left;
+		width: 25%;
+		border-right: 1px solid rgba(0,0,0,0.3);
+	}// end li
+	ul li:last-child {border-right: none;}
+	ul li a {
+		display: block;
+		text-align: center;
+		font-weight: $boldWeight;
+		padding: .5rem 0;
+		color:$primaryColor;
+		text-decoration: none;
+		
+	} // end anchors
+	ul li.active a {
+		background-color: darken( $secondaryColor, 10% );
+	}// end active
+	ul li a:hover {
+		color: $secondaryColor;
+		background-color: $primaryColor;
+	} // end hover
+} // end nav
+
+
+
+/*  ------------- MAIN -------------  */
+
+main {
+    min-height: 20rem;
+	h1 {
+		font-size: 2rem;
+		margin: 1rem 0 0 $gutter;
+		color: $primaryColor;
+	} // end h1
+	
+	h2 {
+		font-size: 1.5rem;
+		margin: .75rem 0 0 $gutter;
+		color: lighten( $primaryColor, 10% );
+	} // end h2
+	
+	p {
+		line-height: 130%;
+		margin: 0 $gutter;
+	} // end p
+	
+    figure {
+		width:96%;
+		margin-left:$gutter;
+	}
+  
+    figure img {width: 100%;}
+    
+    
+} // end main
+
+
+
+/*  ------------- FOOTER -------------  */
+footer {
+	clear: both;
+	width: 100%;
+	background-color: $secondaryColor;
+	p {
+		text-align: center;
+		color: $primaryColor;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} // end p
+	p a {color: $primaryColor;}
+} // end footer
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
