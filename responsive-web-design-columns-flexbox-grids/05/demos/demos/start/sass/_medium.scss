@@ -1,8 +1,14 @@
 /*  ------------- MAIN -------------  */
 main {
-
+    div.container1 div {
+        -ms-flex: 46%;
+        flex-basis: 50%;
+    }
     
-    
+    div.container2 figure {
+        -ms-flex: 29.33%;
+        flex-basis: 33.333%;
+    }
     
     
 } // end main

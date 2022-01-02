@@ -18,6 +18,14 @@ nav {
 /*  ------------- MAIN -------------  */
 main {
 
-    
+	div.container1 div {
+        -ms-flex: 29.333%;
+        flex-basis: 33.333%;
+    }
+
+	div.container2 figure {
+        -ms-flex: 21%;
+        flex-basis: 25%;
+    }
     
 } // end main
