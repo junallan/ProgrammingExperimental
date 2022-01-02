@@ -94,11 +94,26 @@ main {
 		color: $primaryColor;
 	} // end h1
 	
+	article{margin: .5rem $gutter;}
+    
+    figure{float: left;}
+    
+    figure.ex1 {
+		-webkit-clip-path: circle(100% at 0 0);
+		clip-path: circle(100% at 0 0);
+		shape-outside: circle(100% at 0 0);
+		margin: .5rem;
+	}
+
+	figure.ex2 {
+		-webkit-clip-path: polygon(0, 0, 100% 0, 0 100%);
+		clip-path: polygon(0, 0, 100% 0, 0 100%);
+
+		shape-outside: polygon(0, 0, 100% 0, 0 100%);
+		margin: .5rem;
+	}
+
 	
-    
-    
-    
-    
     
     
     

@@ -148,6 +148,20 @@ main {
     font-size: 2rem;
     margin: 1.5rem 0 .5rem 0;
     color: #302b27; }
+  main article {
+    margin: 0.5rem 2%; }
+  main figure {
+    float: left; }
+  main figure.ex1 {
+    -webkit-clip-path: circle(100% at 0 0);
+    clip-path: circle(100% at 0 0);
+    shape-outside: circle(100% at 0 0);
+    margin: .5rem; }
+  main figure.ex2 {
+    -webkit-clip-path: polygon(0, 0, 100% 0, 0 100%);
+    clip-path: polygon(0, 0, 100% 0, 0 100%);
+    shape-outside: polygon(0, 0, 100% 0, 0 100%);
+    margin: .5rem; }
 
 /*  ------------- FOOTER -------------  */
 footer {
@@ -185,5 +199,3 @@ footer {
   /*  ------------- MAIN -------------  */
   main {
     margin: auto; } }
-
-/*# sourceMappingURL=styles.css.map */
