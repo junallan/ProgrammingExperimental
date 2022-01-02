@@ -104,10 +104,16 @@ body {
   font-weight: 300; }
 
 div#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3rem auto auto 3rem auto;
+  grid-template-areas: "hamburger social" "header header" "main main" "footer footer" "links links";
   background-color: #302b27; }
 
 /*  ------------- HAMBURGER -------------  */
 .hamburger {
+  grid-area: hamburger;
+  align-self: center;
   padding-left: 2%;
   font-size: 2rem; }
   .hamburger a {
@@ -116,6 +122,9 @@ div#wrapper {
 
 /*  ------------- SOCIAL -------------  */
 div.social {
+  grid-area: social;
+  justify-self: end;
+  align-self: center;
   padding-right: 2%; }
   div.social a {
     font-size: 1.8rem;
@@ -126,6 +135,7 @@ div.social {
 
 /*  ------------- HEADER -------------  */
 header {
+  grid-area: header;
   color: #baa256;
   padding: 1rem 2%; }
   header h1 {
@@ -137,6 +147,7 @@ header {
 
 /*  ------------- NAV -------------  */
 nav {
+  grid-area: links;
   background-color: #baa256;
   height: 100vh; }
   nav ul li a {
@@ -166,8 +177,7 @@ main {
 /*  ------------- FOOTER -------------  */
 footer {
   grid-area: footer;
-  justify-self: center;
-  align-self: center; }
+  justify-self: center; }
   footer p {
     text-align: center;
     color: #baa256;
@@ -183,7 +193,15 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 35em) {
+  div#wrapper {
+    grid-template-rows: 5rem auto 3rem;
+    grid-template-columns: 10rem auto 12rem;
+    grid-template-areas: "header header social" "links main main" "footer footer footer"; }
+
   /*  ------------- HAMBURGER -------------  */
+  .hamburger {
+    display: none; }
+
   /*  ------------- NAV -------------  */
   nav {
     height: auto; }
@@ -194,10 +212,18 @@ footer {
       background-color: transparent;
       margin: 0; } }
 @media only screen and (min-width: 64em) {
+  div#wrapper {
+    grid-template-rows: 5rem auto auto 3rem;
+    grid-template-columns: auto 12rem;
+    grid-template-areas: "header social" "links links" "main main" "footer footer"; }
+
   /*  ------------- NAV -------------  */
   nav {
     height: auto;
     padding-left: 2%; }
+    nav ul {
+      display: grid;
+      grid-template-columns: 9rem 9rem 9rem 9rem auto; }
     nav ul li {
       width: auto;
       border-bottom: none;
