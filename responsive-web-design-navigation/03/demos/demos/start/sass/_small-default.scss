@@ -1,0 +1,104 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	margin-top: 44px;
+	h1 {display: none;}
+	img {padding: 1rem 0 .5rem 2%; display: block;}
+} // end header
+
+
+/* NAVigation  */
+nav {
+	background-color: $menuColor;
+	position: absolute;
+	top:0;
+	width: 100%;
+
+	ul li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: .7rem 2%;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+	}
+
+	ul li.active a {background-color: $primaryColor;}
+
+	ul li ul li a {padding-left: 8%;}
+
+	button {
+		background-image: url(../images/menuIconWhite.png);
+		background-repeat: no-repeat;
+		width: 72px;
+		height: 32px;
+		background-color: rgba(0,0,0,0.1);
+		background-size: 86%;
+		background-position: center center;
+		border: 1px solid rgba(0,0,0,0.2);
+		border-radius: 10px;
+		margin: 6px 0 6px 2%;
+	}
+
+	ul.closed {display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+	padding: 1rem 0;
+	h1 {font-size: 2.5rem; color: $secondaryColor; padding-left: 2%;}
+	figure.w100 img {width: 100%;}
+	figure.w100 {width: 100%;}
+	.box { 
+		margin-top: 1rem;
+		padding: 2rem 2%; 
+		text-align: center; 
+		line-height: 140%;
+		font-size: 2rem; 
+		color: #fff;
+	} // end box
+	.boxA {@extend .box; background-color: $primaryColor;}
+	.boxB {@extend .box; background-color: $secondaryColor;}
+	.box span {display: block; font-size: 1rem; line-height: 120%;}
+} // end main
+
+/* FOOTER  */
+footer {
+	color: $primaryColor;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,25 @@
+@import "reset";
+
+@import "variables";
+
+@import "small-default";
+
+//small screen navigation starts here
+@media only screen and (max-width: 63.9375em) {
+	@import "small-nav";
+}
+
+//medium screen navigation starts here
+@media only screen and (min-width: 35em) and (max-width: 63.9375em) {
+	@import "medium-nav";
+}
+
+//35em is also 560px (if basefont is 16px)
+@media only screen and (min-width: 35em) {
+	@import "medium";
+}
+
+//64em is also 1028px (if basefont is 16px)
+@media only screen and (min-width: 64em) {
+	@import "large";
+} 

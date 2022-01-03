@@ -1,0 +1,11 @@
+************* CODE FOR SMALL SCREEN NAVIGSTION LINKS  ***********
+ul li a{
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		padding: .6rem 2%;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+	}
+ul li ul li a{padding-left:8%;}
+ul li.active a {background-color: $primaryColor}

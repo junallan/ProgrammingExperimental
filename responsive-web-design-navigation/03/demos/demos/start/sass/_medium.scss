@@ -1,0 +1,65 @@
+/* NAVigation  */
+nav {
+	position: relative;
+	ul.closed {display: block;}
+	button {display: none;}
+
+	ul {
+		margin-left: 2%;
+	}
+
+	ul li {float: left;}
+
+	ul li a {
+		border: none;
+		border-right: 1px solid rgba(0,0,0,0.2);
+		padding: .7rem .9rem;
+		transition: background 0.3 linear;
+		-webkit-transition: background 0.3s linear;
+	}
+
+	ul li a span {display: none;}
+	ul li a:hover {background-color: darken($menuColor,10%);}
+
+	ul li ul {
+		left: -999em;
+		z-index: 99;
+		background-color: ligten($menuColor, 10%);
+		position: absolute;
+		width: 10rem;
+	}
+
+	ul li:hover ul {left: auto;}
+
+	ul li ul li {
+		float: none;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER  */
+header {margin-top: 0;}
+
+/* MAIN  */
+main {
+	h1 {font-size: 5rem;}
+	.box {font-size: 2rem;}
+	.box span {font-size: 1.5rem;}
+} // end main

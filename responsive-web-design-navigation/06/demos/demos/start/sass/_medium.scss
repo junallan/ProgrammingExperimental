@@ -1,0 +1,56 @@
+/* NAVigation  */
+
+
+nav {
+
+    
+    
+    
+	// new stuff
+	ul {
+	margin-left: 2%;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	}
+	ul li {
+	float: left;
+	}
+	ul li a { 
+	border:none; // undo small screen
+	border-right: 1px solid rgba(0,0,0,0.2);
+	background: none;
+	font-size: .9em;
+	padding: .7em .9em;
+	/*transition*/
+	-webkit-transition: color 0.3s linear; 
+	transition: color 0.3s linear;
+	}
+	ul li a:hover {background: darken($menuColor,5%);}
+	
+	
+	ul li ul { /*rules for the sub menu items*/
+	z-index:99;
+	position: absolute;
+	background-color: lighten($menuColor, 10%);
+	left: -999em; /* pushes the menu way off to the side */
+	width: 10em;
+	}
+ 	ul li ul li { /* overides the float and line from the parent ul */
+	float: none;
+	border-right: none;
+	}
+	ul li a span {display: none;}
+ 	ul li:hover ul { /* this displays the menus as drop downs  */
+	left: auto;
+	margin-left: 0;
+} // end hover
+	
+	
+} // end nav
+
+
+/* MAIN  */
+main {
+	h1 {font-size: 5rem;}
+	.box {font-size: 2rem;}
+	.box span {font-size: 1.5rem;}
+} // end main

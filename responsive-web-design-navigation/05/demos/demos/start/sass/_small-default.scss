@@ -1,0 +1,72 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+}
+
+
+/* HEADER  */
+header {
+	h1 {display: none;}
+	img {padding: 1rem 0 .5rem 2%; display: block;}
+} // end header
+
+
+/* NAVigation  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+	padding: 1rem 0;
+	h1 {font-size: 2.5rem; color: $secondaryColor; padding-left: 2%;}
+	figure.w100 img {width: 100%;}
+	figure.w100 {width: 100%;}
+	.box { 
+		margin-top: 1rem;
+		padding: 2rem 2%; 
+		text-align: center; 
+		line-height: 140%;
+		font-size: 2rem; 
+		color: #fff;
+	} // end box
+	.boxA {@extend .box; background-color: $primaryColor;}
+	.boxB {@extend .box; background-color: $secondaryColor;}
+	.box span {display: block; font-size: 1rem; line-height: 120%;}
+} // end main
+
+/* FOOTER  */
+footer {
+	color: $primaryColor;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
