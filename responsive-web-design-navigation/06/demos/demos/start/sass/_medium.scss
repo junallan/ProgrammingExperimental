@@ -1,10 +1,14 @@
-/* NAVigation  */
+header {
+	margin-top: 2.75rem;
+}
 
+/* NAVigation  */
+a.hamburgerOpen, a.hamburgerClose {display: none;}
 
 nav {
-
-    
-    
+	position:absolute;
+    top: 0;
+    height: auto;
     
 	// new stuff
 	ul {

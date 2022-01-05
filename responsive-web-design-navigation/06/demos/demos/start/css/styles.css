@@ -1,1 +1,244 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0}input,select{vertical-align:middle}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:"Ubuntu",sans-serif;font-size:16px}header h1{display:none}header img{padding:1rem 0 .5rem 2%;display:block}main{padding:1rem 0}main h1{font-size:2.5rem;color:#c23e64;padding-left:2%}main figure.w100 img{width:100%}main figure.w100{width:100%}main .box,main .boxA,main .boxB{margin-top:1rem;padding:2rem 2%;text-align:center;line-height:140%;font-size:2rem;color:#fff}main .boxA{background-color:#0064a5}main .boxB{background-color:#c23e64}main .box span,main .boxA span,main .boxB span{display:block;font-size:1rem;line-height:120%}footer{color:#0064a5;padding:2rem 0;text-align:center}.clearfix:after{content:"";display:table;clear:both}@media only screen and (min-width: 35em){nav ul{margin-left:2%;border-left:1px solid rgba(0,0,0,0.2)}nav ul li{float:left}nav ul li a{border:none;border-right:1px solid rgba(0,0,0,0.2);background:none;font-size:.9em;padding:.7em .9em;-webkit-transition:color 0.3s linear;transition:color 0.3s linear}nav ul li a:hover{background:#262626}nav ul li ul{z-index:99;position:absolute;background-color:#4d4d4d;left:-999em;width:10em}nav ul li ul li{float:none;border-right:none}nav ul li a span{display:none}nav ul li:hover ul{left:auto;margin-left:0}header{margin-top:0}main h1{font-size:5rem}main .box,main .boxA,main .boxB{font-size:2rem}main .box span,main .boxA span,main .boxB span{font-size:1.5rem}}@media only screen and (min-width: 64em){nav ul li a span{display:inline}}
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BODY  */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+
+/* HEADER  */
+header h1 {
+  display: none; }
+header img {
+  padding: 1rem 0 .5rem 2%;
+  display: block; }
+
+div.smallNavBar {
+  background-color: #333; }
+
+.hamburger, .hamburgerOpen, .hamburgerClose {
+  display: block;
+  width: 7rem;
+  height: 2.75rem;
+  background-color: #c23e64;
+  background-repeat: no-repeat;
+  background-position: 2vw center; }
+
+.hamburgerOpen {
+  background-image: url(../images//menuOpenWhite.png); }
+
+.hamburgerClose {
+  background-image: url(../images//menuCloseWhite.png); }
+
+/* NAVigation  */
+nav {
+  height: 100vh;
+  width: 100%;
+  background-color: #333; }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: .6rem 2%;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+  nav ul li ul li a {
+    padding-left: 8%; }
+  nav ul li.active a {
+    background-color: #0064a5; }
+
+/* MAIN  */
+main {
+  padding: 1rem 0; }
+  main h1 {
+    font-size: 2.5rem;
+    color: #c23e64;
+    padding-left: 2%; }
+  main figure.w100 img {
+    width: 100%; }
+  main figure.w100 {
+    width: 100%; }
+  main .box, main .boxA, main .boxB {
+    margin-top: 1rem;
+    padding: 2rem 2%;
+    text-align: center;
+    line-height: 140%;
+    font-size: 2rem;
+    color: #fff; }
+  main .boxA {
+    background-color: #0064a5; }
+  main .boxB {
+    background-color: #c23e64; }
+  main .box span, main .boxA span, main .boxB span {
+    display: block;
+    font-size: 1rem;
+    line-height: 120%; }
+
+/* FOOTER  */
+footer {
+  color: #0064a5;
+  padding: 2rem 0;
+  text-align: center; }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 35em) {
+  header {
+    margin-top: 2.75rem; }
+
+  /* NAVigation  */
+  a.hamburgerOpen, a.hamburgerClose {
+    display: none; }
+
+  nav {
+    position: absolute;
+    top: 0;
+    height: auto; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      background: none;
+      font-size: .9em;
+      padding: .7em .9em;
+      /*transition*/
+      -webkit-transition: color 0.3s linear;
+      transition: color 0.3s linear; }
+    nav ul li a:hover {
+      background: #262626; }
+    nav ul li ul {
+      /*rules for the sub menu items*/
+      z-index: 99;
+      position: absolute;
+      background-color: #4d4d4d;
+      left: -999em;
+      /* pushes the menu way off to the side */
+      width: 10em; }
+    nav ul li ul li {
+      /* overides the float and line from the parent ul */
+      float: none;
+      border-right: none; }
+    nav ul li a span {
+      display: none; }
+    nav ul li:hover ul {
+      /* this displays the menus as drop downs  */
+      left: auto;
+      margin-left: 0; }
+
+  /* MAIN  */
+  main h1 {
+    font-size: 5rem; }
+  main .box, main .boxA, main .boxB {
+    font-size: 2rem; }
+  main .box span, main .boxA span, main .boxB span {
+    font-size: 1.5rem; } }
+@media only screen and (min-width: 64em) {
+  /* NAVigation  */
+  nav ul li a span {
+    display: inline; } }
+
+/*# sourceMappingURL=styles.css.map */
