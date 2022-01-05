@@ -1,6 +1,55 @@
+body {
+	grid-template-areas: 
+	"myHeader"
+	"myNavigation"
+	"myContent"
+	"myFooter";
+}
+
 /* NAVigation  */
 
+nav {
+	//undo small screen
+	button {display: none;}
+	ul.closed {max-height: 31rem;}
+    
+	// new stuff
+	ul {
+	margin-left: 2%;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	}
+	ul li {
+	float: left;
+	}
+	ul li a { 
+	border:none; // undo small screen
+	border-right: 1px solid rgba(0,0,0,0.2);
+	font-size: .9em;
+	padding: .7em .9em;
+	
+	}
+	ul li a:hover {background: darken($menuColor,10%);}
+	
+	
+	ul li ul { /*rules for the sub menu items*/
+        position: absolute;
+        left: -999em; /* pushes the menu way off to the side */
+        background-color: lighten($menuColor, 10%);
+        width: 10em;
+		border: none;
+	}
+    /* overides the float and line from the parent ul */
+ 	ul li ul li { float: none;}
+	ul li ul li a {border: none; border-bottom: 1px solid rgba(0,0,0,0.2); }
+	ul li a span {display: none;}
+    
+    /* this displays the menus as drop downs  */
+ 	ul li:hover ul { 
+	left: auto;
+	margin-left: 0;
+	}
 
+} // end nav
 
 
 

@@ -23,68 +23,56 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
+  background: transparent; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 nav ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
+  background: transparent; }
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 del {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help;
-}
+  cursor: help; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* change border colour to suit your needs */
 hr {
@@ -93,117 +81,168 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input, select {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
 
 /*  apply a natural box layout model to all elements  */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /* BODY  */
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-}
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "myNavigation" "myHeader" "myContent" "myFooter"; }
 
 /* HEADER  */
-header h1 {
-  display: none;
-}
-
-header img {
-  padding: 1rem 0 .5rem 2%;
-  display: block;
-}
+header {
+  grid-area: myHeader; }
+  header h1 {
+    display: none; }
+  header img {
+    padding: 1rem 0 .5rem 2%;
+    display: block; }
 
 /* NAVigation  */
+nav {
+  grid-area: myNavigation;
+  background-color: #c23e64; }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: .6rem 2%;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }
+  nav ul li ul li a {
+    padding-left: 8%; }
+  nav ul li.active > a {
+    background-color: black; }
+  nav ul {
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+  nav ul.closed {
+    max-height: 0; }
+  nav ul.open {
+    max-height: 31rem; }
+  nav button {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    width: 3.5rem;
+    margin: 3px 2%;
+    border-radius: 5px; }
+
 /* MAIN  */
 main {
-  padding: 1rem 0;
-}
-
-main h1 {
-  font-size: 2.5rem;
-  color: #c23e64;
-  padding-left: 2%;
-}
-
-main figure.w100 img {
-  width: 100%;
-}
-
-main figure.w100 {
-  width: 100%;
-}
-
-main .box, main .boxA, main .boxB {
-  margin-top: 1rem;
-  padding: 2rem 2%;
-  text-align: center;
-  line-height: 140%;
-  font-size: 2rem;
-  color: #fff;
-}
-
-main .boxA {
-  background-color: #0064a5;
-}
-
-main .boxB {
-  background-color: #c23e64;
-}
-
-main .box span, main .boxA span, main .boxB span {
-  display: block;
-  font-size: 1rem;
-  line-height: 120%;
-}
+  grid-area: myContent;
+  padding: 1rem 0; }
+  main h1 {
+    font-size: 2.5rem;
+    color: #c23e64;
+    padding-left: 2%; }
+  main figure.w100 img {
+    width: 100%; }
+  main figure.w100 {
+    width: 100%; }
+  main .box, main .boxA, main .boxB {
+    margin-top: 1rem;
+    padding: 2rem 2%;
+    text-align: center;
+    line-height: 140%;
+    font-size: 2rem;
+    color: #fff; }
+  main .boxA {
+    background-color: #0064a5; }
+  main .boxB {
+    background-color: #c23e64; }
+  main .box span, main .boxA span, main .boxB span {
+    display: block;
+    font-size: 1rem;
+    line-height: 120%; }
 
 /* FOOTER  */
 footer {
+  grid-area: myFooter;
   color: #0064a5;
   padding: 2rem 0;
-  text-align: center;
-}
+  text-align: center; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
 @media only screen and (min-width: 35em) {
+  body {
+    grid-template-areas: "myHeader" "myNavigation" "myContent" "myFooter"; }
+
   /* NAVigation  */
+  nav {
+    /* overides the float and line from the parent ul */
+    /* this displays the menus as drop downs  */ }
+    nav button {
+      display: none; }
+    nav ul.closed {
+      max-height: 31rem; }
+    nav ul {
+      margin-left: 2%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li {
+      float: left; }
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: .9em;
+      padding: .7em .9em; }
+    nav ul li a:hover {
+      background: #9c3150; }
+    nav ul li ul {
+      /*rules for the sub menu items*/
+      position: absolute;
+      left: -999em;
+      /* pushes the menu way off to the side */
+      background-color: #ce6583;
+      width: 10em;
+      border: none; }
+    nav ul li ul li {
+      float: none; }
+    nav ul li ul li a {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    nav ul li a span {
+      display: none; }
+    nav ul li:hover ul {
+      left: auto;
+      margin-left: 0; }
+
   /* HEADER  */
   header {
-    margin-top: 0;
-  }
+    margin-top: 0; }
+
   /* MAIN  */
   main h1 {
-    font-size: 5rem;
-  }
+    font-size: 5rem; }
   main .box, main .boxA, main .boxB {
-    font-size: 2rem;
-  }
+    font-size: 2rem; }
   main .box span, main .boxA span, main .boxB span {
-    font-size: 1.5rem;
-  }
-}
-
+    font-size: 1.5rem; } }
 @media only screen and (min-width: 64em) {
   /* NAVigation  */
-}
+  nav ul li a span {
+    display: inline; } }

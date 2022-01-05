@@ -8,19 +8,59 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
 	font-family: $defaultFont;
 	font-size: 16px;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"myNavigation"
+		"myHeader"
+		"myContent"
+		"myFooter";
 }
 
 
 /* HEADER  */
 header {
+	grid-area: myHeader;
 	h1 {display: none;}
 	img {padding: 1rem 0 .5rem 2%; display: block;}
 } // end header
 
 
 /* NAVigation  */
+nav {
+	grid-area: myNavigation;
+	background-color: $menuColor;
+	ul li a{
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		padding: .6rem 2%;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+	}
+	ul li ul li a{padding-left:8%;}
+	ul li.active > a {background-color: black;}
 
+	ul {
+		overflow: hidden;
+		-webkit-transition: max-height 0.5s;
+		-moz-transition: max-height 0.5s;
+		transition: max-height 0.5s;
+	}
 
+	ul.closed {max-height: 0;}
+	ul.open {max-height: 31rem;}
+
+	button {
+		font-size: 1.5rem;
+		color: white;
+		background-color: rgba(0,0,0,0.2);
+		border: solid 1px rgba(0,0,0,0.3);
+		width: 3.5rem;
+		margin: 3px 2%;
+		border-radius: 5px;
+	}
+}
 
 
 
@@ -40,6 +80,7 @@ header {
 
 /* MAIN  */
 main {
+	grid-area: myContent;
 	padding: 1rem 0;
 	h1 {font-size: 2.5rem; color: $secondaryColor; padding-left: 2%;}
 	figure.w100 img {width: 100%;}
@@ -59,6 +100,7 @@ main {
 
 /* FOOTER  */
 footer {
+	grid-area: myFooter;
 	color: $primaryColor;
 	padding: 2rem 0;
 	text-align: center;
