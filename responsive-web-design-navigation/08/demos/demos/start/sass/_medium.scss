@@ -1,14 +1,18 @@
+body {
+	grid-template-areas:
+		"logo logo"
+		"links content"
+		"footer footer";
+	grid-template-columns: 9rem auto;	
+}
+
+div#navBar, nav div a.hamburgerClose {display: none;}
 
 
-
-
-
-
-
-
-
-
-
+nav {
+	height: auto;
+	ul li a {text-align: right;}
+}
 
 
 
