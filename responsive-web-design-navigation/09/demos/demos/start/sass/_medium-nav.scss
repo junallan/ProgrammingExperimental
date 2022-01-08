@@ -1,8 +1,21 @@
 /* NAVigation  */
 nav {
-	
+	ul li a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        background-size: auto 26px;
+        background-position: center 5px;
+    }
     
-    
+    ul li a span {
+      display: block; 
+      font-size: .6rem; 
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      text-align: center;
+    }
     
     
     

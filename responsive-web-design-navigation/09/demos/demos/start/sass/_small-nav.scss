@@ -1,13 +1,58 @@
 /* NAVigation  */
 nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $primaryColor;
+    border-top: solid 1px rgba(0,0,0,0.5);
+    ul li {float: left; width: 25%;}
+    ul li a {
+        display: block;
+        height: 50px;
+        width: 100%;
+        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto 36px;;
+    }
 
+    ul li:hover a {background-color: $menuColor;}
     
-    
-    
-    
-    
-    
-    
+    ul li:nth-child(1) a {background-image: url(../images/icon_deals.png);}
+    ul li:nth-child(2) a {background-image: url(../images/icon_destination.png);}
+    ul li:nth-child(3) a {background-image: url(../images/icon_resort.png);}
+    ul li:nth-child(4) a {background-image: url(../images/icon_cruise.png);}
 	
+    ul li a span {display: none;}
+
+    ul li ul {
+        position: absolute;
+        bottom: 50px;
+        z-index:99;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+    }
+
+    ul li ul li {float:none; width: 100%;}
+
+    ul li ul li a {
+        background-color: $menuColor;
+        color: white;
+        background-image: none !important;
+        text-decoration: none;
+        height: auto;
+        padding: .7em .4em;
+        margin: .5rem 5%;
+        width: 90%;
+        border-radius: 5px;
+        box-shadow: 0 2px 1px rgba(0,0,0,0.5); 
+    }
+
+    ul li ul li a:hover{background-color: darken($menuColor, 10%);}
+
+    ul li:hover ul {
+        bottom: 50px;
+    }
 } // end navigation
 
