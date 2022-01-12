@@ -1,0 +1,19 @@
+﻿body { 
+    background-color:#cccc99;       
+}
+
+p
+{
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: Black;
+    border-width: 2mm;
+    width: 200px;
+}
+
+div
+{
+    width:50%;
+}
+
+
