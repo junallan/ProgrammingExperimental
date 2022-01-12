@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 body, html { height: 100%;}
-body {
-    margin:0;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-rows: auto 50px;
-    grid-template-columns: 12% auto;
-    grid-template-areas: 
-        "sidebar right"
-        "footer footer";
-}
+
 
 a { text-decoration: none; }
 ul { list-style-type: none; float:right; }
@@ -34,6 +25,17 @@ header {
 
     display: grid;
     grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
+}
+
+body {
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: auto 50px;;
+    grid-template-columns: 12% auto;
+    grid-template-areas: 
+        "sidebar right"
+        "footer footer";
 }
 
 section#hero {
@@ -75,8 +77,13 @@ img {
 
 .main {
     grid-area: right;
-    grid-template-rows: 52px fit-content(30%) 40%;
+    grid-template-rows: 52px fit-content(30%) 40% auto;
     display: grid;
+    grid-template-areas: 
+        "head"
+        "hero"
+        "invention"
+        "features";
 }
 
 footer {
@@ -142,4 +149,105 @@ section#info {
 #mountain-vector {
     width: 200px;
     align-self: center;
+}
+
+@media screen and (max-width: 60em) {
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "right"
+            "footer";
+    }
+
+    .main {
+        grid-template-areas: 
+            "head"
+            "hero"
+            "features"
+            "invention";
+    }
+
+    #features {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    ul#features li:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .main {
+        grid-template-rows: auto fit-content(30%) 40% auto;
+    }
+
+    header {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    #logo {
+        margin-left: 0;
+    }
+
+    nav ul {
+        float:none;
+        padding:0;margin:0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: calc(25% - 35px);
+        display: inline-block;
+        font-size: .9em;
+    }
+
+    section#hero, section#info {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    .main {
+        grid-template-areas: 
+            "head"
+            "hero"
+            "invention"
+            "features";
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    #mountian {
+        width: 100px;
+        height: 100px;
+    }
+
+    #content p, #content2 p {
+        font-size:.9em;
+    }
+    
+    #features {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    ul#features li:nth-child(2), ul#features li:nth-child(1) {
+        grid-column: 1 / span 2;
+    }
+
+    footer {
+        background-color: #41c7c7;
+    }
+
+    footer p  {
+        color: #fff;
+        text-align: center;
+    }
 }
