@@ -61,3 +61,7 @@ C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\obj\Debug\net6.0\Commander
 C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\obj\Debug\net6.0\Commander.genruntimeconfig.cache
 C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\AutoMapper.dll
 C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\ProgrammingExperimental\lesJackson\S3\E2\Commander\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
