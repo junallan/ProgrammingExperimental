@@ -1,0 +1,14 @@
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/bin/Debug/net7.0/thirtyonedaysrefactoring
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/bin/Debug/net7.0/thirtyonedaysrefactoring.deps.json
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/bin/Debug/net7.0/thirtyonedaysrefactoring.runtimeconfig.json
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/bin/Debug/net7.0/thirtyonedaysrefactoring.dll
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/bin/Debug/net7.0/thirtyonedaysrefactoring.pdb
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.GeneratedMSBuildEditorConfig.editorconfig
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.AssemblyInfoInputs.cache
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.AssemblyInfo.cs
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.csproj.CoreCompileInputs.cache
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.dll
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/refint/thirtyonedaysrefactoring.dll
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.pdb
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/thirtyonedaysrefactoring.genruntimeconfig.cache
+/Users/junallanparreno/Projects/ProgrammingExperimental/thirtyonedaysrefactoring/obj/Debug/net7.0/ref/thirtyonedaysrefactoring.dll
